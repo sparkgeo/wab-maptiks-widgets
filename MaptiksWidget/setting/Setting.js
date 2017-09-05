@@ -8,7 +8,6 @@ function(declare, BaseWidgetSetting) {
     baseClass: 'maptiks-widget-setting',
 
     postCreate: function(){
-      //the config object is passed in
       this.setConfig(this.config);
     },
 
@@ -18,7 +17,6 @@ function(declare, BaseWidgetSetting) {
     },
 
     getConfig: function(){
-      //WAB will get config object through this method
       return {
         maptiksTrackcode: this.maptiksTrackcode.value,
         maptiksId: this.maptiksId.value
