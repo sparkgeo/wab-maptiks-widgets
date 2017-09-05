@@ -35,3 +35,5 @@ A Web Appbuilder for ArcGIS widget that enables Maptiks analytics on map.
 6. In Web AppBuilder, configure the app. MaptiksWidget should appear in the available widgets. Configure the widget with the trackcode for your domain, obtained from your [Maptiks](https://maptiks.com/) account, and an ID of your choice, which will appear in your list of tracked maps in your Maptiks account.
 7. Save the changes.
 8. Deploy your app.
+
+![gif](gif/maptiks_demo.gif)
