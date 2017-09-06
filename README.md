@@ -16,8 +16,12 @@ A Web Appbuilder for ArcGIS widget that enables Maptiks analytics on map.
 1. Sign up for a [Maptiks](https://maptiks.com/) account.
 2. Download, install, and start [Web AppBuilder for ArcGIS (Developer Edition)](https://developers.arcgis.com/web-appbuilder/)
 3. Create a new app or import an existing app.
-4. Download MaptiksWidget and copy into the `widgets` folder of the app: {path/to/WAB}/server/apps/{appid}/widgets
-5. Register MaptiksWidget as an off-panel widget, in the `widgets` object in: {path/to/WAB}/server/apps/{appid}/config.json
+4. Download MaptiksWidget and copy into the `widgets` folder in either:
+  * the WAB: `{path/to/WAB}/client/stemapp/widgets`
+  * an individual app: `{path/to/WAB}/server/apps/{appid}/widgets`
+5. Register MaptiksWidget as an off-panel widget in the `widgets` object in either:
+  * the WAB: `{path/to/WAB}/client/stemapp/predefined-apps/default/config.json`
+  * an individual app: `{path/to/WAB}/server/apps/{appid}/config.json`
 
 ```
 "widgetsOnScreen": {
