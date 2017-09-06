@@ -23,6 +23,9 @@ A Web Appbuilder for ArcGIS widget that enables Maptiks analytics on map.
   * the WAB: `{path/to/WAB}/client/stemapp/predefined-apps/default/config.json`
   * an individual app: `{path/to/WAB}/server/apps/{appid}/config.json`
 
+    Note that widgets are associated with the *theme* in the config file - the default theme if added to the WAB file, or the current theme if added to the app file. If you change the theme of the app after updating the config file, it will be overwritten, and this modification will be lost.
+
+
 ```
 "widgetsOnScreen": {
   "widgets": [
