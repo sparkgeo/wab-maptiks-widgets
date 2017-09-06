@@ -19,6 +19,9 @@ A Web Appbuilder for ArcGIS widget that enables Maptiks analytics on map.
 4. Download MaptiksWidget and copy into the `widgets` folder in either:
   * the WAB: `{path/to/WAB}/client/stemapp/widgets`
   * an individual app: `{path/to/WAB}/server/apps/{appid}/widgets`
+  
+    Note that the widgets folder automatically re-populates each time the *theme* of the app is changed. If you change the theme of the app after updating the widgets folder, it will be overwritten, and this modification will be lost.
+  
 5. Register MaptiksWidget as an off-panel widget in the `widgets` object in either:
   * the WAB: `{path/to/WAB}/client/stemapp/predefined-apps/default/config.json`
   * an individual app: `{path/to/WAB}/server/apps/{appid}/config.json`
