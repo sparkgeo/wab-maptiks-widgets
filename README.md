@@ -20,13 +20,13 @@ A Web Appbuilder for ArcGIS widget that enables Maptiks analytics on map.
   * the WAB: `{path/to/WAB}/client/stemapp/widgets`
   * an individual app: `{path/to/WAB}/server/apps/{appid}/widgets`
   
-    Note that the widgets folder automatically re-populates each time the *theme* of the app is changed. If you change the theme of the app after updating the widgets folder, it will be overwritten, and this modification will be lost.
+    Note that the widgets folder automatically re-populates each time the [theme](https://developers.arcgis.com/web-appbuilder/guide/themes-tab.htm) of the app is changed. If you change the theme of the app after updating the widgets folder, it will be overwritten, and this modification will be lost.
   
 5. Register MaptiksWidget as an off-panel widget in the `widgets` object in either:
   * the WAB: `{path/to/WAB}/client/stemapp/predefined-apps/default/config.json`
   * an individual app: `{path/to/WAB}/server/apps/{appid}/config.json`
 
-    Note that widgets are associated with the *theme* in the config file - the default theme if added to the WAB file, or the current theme if added to the app file. If you change the theme of the app after updating the config file, it will be overwritten, and this modification will be lost.
+    Note that widgets are associated with the [theme](https://developers.arcgis.com/web-appbuilder/guide/themes-tab.htm) in the config file - the default theme if added to the WAB file, or the current theme if added to the app file. If you change the theme of the app after updating the config file, it will be overwritten, and this modification will be lost.
 
 
 ```
