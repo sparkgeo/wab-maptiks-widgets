@@ -43,9 +43,9 @@ A Web Appbuilder for ArcGIS widget that enables Maptiks analytics on map.
 ```
 
 6. Obtain a trackcode for your domain from your [Maptiks](https://maptiks.com/) account, and choose an ID that will appear in the list of tracked maps in your Maptiks account.
-7. In WAB, configure the app. Depending on which app template you use, the widget may or may not appear in the configuration UI.
+7. In WAB, configure the app. Depending on which app template/theme you use, the widget may or may not appear in the configuration UI.
   * If you use the `Default (2D)` template, the MaptiksWidget should appear in the available widgets. Configure the widget with the Maptiks trackcode and ID.
-  * Templates such as `Infographic`, `Ground Zero`, `Editor`, and `Maplet` do not show available custom widgets in the UI. To enable Maptiks on these templates, enter the Maptiks trackcode and ID in the widget config file: `{path/to/WAB}/server/apps/{appid}/widgets/MaptiksWidget/config.json`:
+  * Templates such as `Infographic`, `Ground Zero`, `Editor`, and `Maplet`, as well as various [themes](https://developers.arcgis.com/web-appbuilder/guide/themes-tab.htm), do not show available custom widgets in the UI. To enable Maptiks on these templates, enter the Maptiks trackcode and ID in the widget config file: `{path/to/WAB}/server/apps/{appid}/widgets/MaptiksWidget/config.json`:
   
 ```
 {
