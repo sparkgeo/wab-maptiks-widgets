@@ -12,7 +12,7 @@ Web AppBuilder for ArcGIS (WAB) widgets enabling Maptiks map analytics on maps a
 ## MaptiksWidget
 A Web Appbuilder for ArcGIS widget that enables Maptiks analytics on map.
 
-### Instructions
+### Instructions (using Web AppBuilder for ArcGIS (Developer Edition))
 1. Sign up for a [Maptiks](https://maptiks.com/) account.
 2. Download, install, and start [Web AppBuilder for ArcGIS (Developer Edition)](https://developers.arcgis.com/web-appbuilder/)
 3. Create a [new app or import an existing app](https://developers.arcgis.com/web-appbuilder/guide/create-import-app.htm).
@@ -49,8 +49,8 @@ A Web Appbuilder for ArcGIS widget that enables Maptiks analytics on map.
   
 ```
 {
-  "maptiksTrackcode": "{your Maptiks trackcode}",
-  "maptiksId": "{ID of your choice}"
+  "maptiksTrackcode": "your Maptiks trackcode",
+  "maptiksId": "ID of your choice"
 }
 ```
   
@@ -58,3 +58,34 @@ A Web Appbuilder for ArcGIS widget that enables Maptiks analytics on map.
 9. Deploy your app.
 
 ![gif](gif/maptiks_demo.gif)
+
+### Instructions (using Web AppBuilder for ArcGIS (ArcGIS Online WAB))
+1. Sign up for a [Maptiks](https://maptiks.com/) account.
+2. Create an app in the ArcGIS Online version of WAB.
+3. Once complete, download the app as a zip folder from the app item page. Unzip the app.
+4. Download MaptiksWidget and copy into the app's `widgets` folder.
+5. Obtain a trackcode for your domain from your [Maptiks](https://maptiks.com/) account, and choose an ID that will appear in the list of tracked maps in your Maptiks account.
+6. Open the app's `config.json` file in a text editor. There is a section in the file that lists the app's widgets. The list starts with `"widgetOnScreen":{"widgets":[`. We need to include the following information in that list (make sure to substitute your trackcode and ID). It should look like this:
+
+```
+"widgetOnScreen":{"widgets":[{
+    "uri": "widgets/MaptiksWidget/Widget",
+    "id": "widgets_MaptiksWidget_Widget",
+    "IsController": false,
+    "openAtStart": true,
+    "name": "MaptiksWidget",
+    "version": "0.0.1",
+    "config": {
+      "maptiksTrackcode": "your Maptiks trackcode",
+      "maptiksId": "ID of your choice"
+    },
+    "position": {
+      "relativeTo": "map"
+    }
+  },
+      
+  ... the rest of the widgets
+```
+
+7. Save the changes.
+8. Deploy your app.
