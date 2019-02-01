@@ -9,7 +9,7 @@ function(declare, BaseWidget) {
       
       this.inherited(arguments);
 
-      require(["//cdn.maptiks.com/esri3/mapWrapper.js"], (mapWrapper) => {
+      require(["//cdn.maptiks.com/esri3/mapWrapper.js"], function(mapWrapper) {
         var container = this.map.container;
         var maptiksMapOptions = {
           maptiks_trackcode: this.config.maptiksTrackcode,
