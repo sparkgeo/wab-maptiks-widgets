@@ -8,14 +8,15 @@ function(declare, BaseWidget) {
     postCreate: function() {
       
       this.inherited(arguments);
+      var self = this;
 
       require(["//cdn.maptiks.com/esri3/mapWrapper.js"], function(mapWrapper) {
-        var container = this.map.container;
+        var container = self.map.container;
         var maptiksMapOptions = {
-          maptiks_trackcode: this.config.maptiksTrackcode,
-          maptiks_id: this.config.maptiksId
+          maptiks_trackcode: self.config.maptiksTrackcode,
+          maptiks_id: self.config.maptiksId
         };
-        mapWrapper(container, maptiksMapOptions, this.map);
+        mapWrapper(container, maptiksMapOptions, self.map);
       });
     }
   });
